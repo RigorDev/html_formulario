@@ -7,417 +7,453 @@
     <title>Formulario</title>
 
     <style>
-        form { 
-            text-align: justify;
-            margin: auto;
+        table {
         
-            background-color: rgb(253, 253, 253);
+            margin: 0;
+            border: 1px solid black;
             width: 50%;
+            height: auto;
+        }
+        td {
+            border: 1px solid;
             
         }
         header {
-            
             text-align: center;
+            width: 50%;
+            height: auto;
         }
-        main {
-            border: 1px solid #CCC;
-        
-
-        }
-        footer {
-            text-align: center;
-        }
-        input {
-            font-size: 13px;
-        }
-    
-        
     </style>
     
 </head>
 <body>
-    <div id="ficha">
-     <form>
-        <header>
-            <figure> 
-                <embed src="https://cdn.slidesharecdn.com/ss_thumbnails/frbl-160930134411-thumbnail-4.jpg?cb=1475243288" width="120">
-                    <h4 style="text-decoration: underline">ANEXO I</h4>
-              <figcaption></figcaption>
-            </figure>
-            
-            
-            <h3 style="text-decoration: underline">FORMULÁRIO DE CADASTRO DE ENTIDADES CIVIS</h3>
-            <h5>
+    <main>
+        <form>
+            <header>
+               <img src="https://cdn.slidesharecdn.com/ss_thumbnails/frbl-160930134411-thumbnail-4.jpg?cb=1475243288" alt="FRBL" width="120" height="50">
+               <h1>ANEXO I <br>FORMULÁRIO DE CADASTRO DE ENTIDADES CIVIS</h1>
+            </header>
+
                 <ol>
-                    <li style="text-align: left">DADOS CADASTRAIS</li>
-                </ol>
-            </h5>
-        </header>
-        <main>
-            <section id="entidade" style="margin:5px">
-                <label for="nome">Nome da Entidade:</label>
-                <input type="text" id="nome" name="nome" minlength="1" maxlength="100" pattern="[a-zA-Z0-9]+">
-                         <hr>
-                <label for="cnpj">CNPJ:</label>
-                <input type="text" id="cnpj" name="cnpj" pattern="[a-zA-Z0-9]+">
-                         <hr>
-                <label for="finalidade">Finalidade Institucional (área(s) de atuação):</label><br>
-                <input type="text" id="finalidade" name="finalidade"  minlength="1" maxlength="150" pattern="[a-zA-Z0-9]+">
-                         <hr>
-                <label for="constituicao">Data de Constituição:</label>
-                    <select id="constituicao" style="width:20%">
-                        <option value="d">Dia</option>
-                        <option value="pri">01</option>
-                        <option value="seg">02</option>
-                        <option value="ter">03</option>
-                        <option value="qua">04</option>
-                        <option value="qui">05</option>
-                        <option value="sex">06</option>
-                        <option value="set">07</option>
-                        <option value="oit">08</option>
-                        <option value="nov">09</option>
-                        <option value="dez">10</option>
-                        <option value="onz">11</option>
-                        <option value="doz">12</option>
-                        <option value="treze">13</option>
-                        <option value="quatorze">14</option>
-                        <option value="quinze">15</option>
-                        <option value="dezesseis">16</option>
-                        <option value="dezessete">17</option>
-                        <option value="dezoi">18</option>
-                        <option value="dezenov">19</option>
-                        <option value="vint">20</option>
-                        <option value="vintuno">21</option>
-                        <option value="vint2">22</option>
-                        <option value="vint3">23</option>
-                        <option value="vint4">24</option>
-                        <option value="vint5">25</option>
-                        <option value="vint6">26</option>
-                        <option value="vint7">27</option>
-                        <option value="vint8">28</option>
-                        <option value="vint9">29</option>
-                        <option value="trinta">30</option>
-                        <option value="trinta1">31</option>
-                        </select>
-
-                    <select id="constituicao" style="width:20%">
-                        <option value="m">Mês</option>
-                        <option value="1">Janeiro</option>
-                        <option value="2">Fevereiro</option>
-                        <option value="3">Março</option>
-                        <option value="4">Abril</option>
-                        <option value="5">Maio</option>
-                        <option value="6">Junho</option>
-                        <option value="7">Julho</option>
-                        <option value="8">Agosto</option>
-                        <option value="9">Setembro</option>
-                        <option value="10">Outubro</option>
-                        <option value="11">Novembro</option>
-                        <option value="12">Dezembro</option>
-                        </select>
-
-                    <select id="constituicao" style="width:20%">
-                               <option value="a">Ano</option>
-                               <option value="0">2022</option>
-                               <option value="1">2021</option>
-                               <option value="2">2020</option>
-                               <option value="3">2019</option>
-                               <option value="4">2018</option>
-                               <option value="5">2017</option>
-                               <option value="6">2016</option>
-                               <option value="7">2015</option>
-                               <option value="8">2014</option>
-                               <option value="9">2013</option>
-                               <option value="10">2012</option>
-                               <option value="11">2011</option>
-                               <option value="12">2010</option>
-                               <option value="13">2009</option>
-                               <option value="14">2008</option>
-                               <option value="15">2007</option>
-                               <option value="16">2006</option>
-                               <option value="17">2005</option>
-                               <option value="18">2004</option>
-                               <option value="19">2003</option>
-                               <option value="20">2002</option>                              
-                               <option value="21">2001</option>
-                               <option value="22">2000</option>
-                               <option value="23">1999</option>
-                               <option value="24">1998</option>
-                               <option value="25">1997</option>
-                               <option value="26">1996</option>
-                               <option value="27">1995</option>
-                               <option value="28">1994</option>
-                               <option value="29">1993</option>
-                               <option value="30">1992</option>
-                               <option value="31">1991</option>
-                               <option value="32">1990</option>
-                               <option value="33">1989</option>
-                               <option value="34">1988</option>
-                               <option value="35">1987</option>
-                               <option value="36">1986</option>
-                               <option value="37">1985</option>
-                               <option value="38">1984</option>
-                               <option value="39">1983</option>
-                               <option value="40">1982</option>
-                               <option value="41">1981</option>
-                               <option value="42">1980</option>
-                               <option value="43">1979</option>
-                               <option value="44">1978</option>
-                               <option value="45">1977</option>
-                               <option value="46">1976</option>
-                               <option value="47">1975</option>
-                               <option value="48">1974</option>
-                               <option value="49">1973</option>
-                               <option value="50">1972</option>
-                               <option value="51">1971</option>
-                               <option value="52">1970</option>
-                               <option value="53">1969</option>
-                               <option value="54">1968</option>
-                               <option value="55">1967</option>
-                               <option value="56">1966</option>
-                               <option value="57">1965</option>
-                               <option value="58">1964</option>
-                               <option value="59">1963</option>
-                               <option value="60">1962</option>
-                               <option value="61">1961</option>
-                               <option value="62">1960</option>
-                    </select>
-                               <hr>
-                        <label for="endereco">Endereço:</label>
-                        <input type="text" id="endereco" name="endereco"><br>
-                        <hr>
-                        <br>
-                        <label for="numero">Nº:</label>
-                        <input type="text" id="numero" name="numero" pattern="[a-zA-Z0-9]+">
-                        <label for="complemento">Complemento:</label>
-                        <input type="text" id="complemento" name="complemento">
-                                <hr>
-                        <label for="bairro">Bairro:</label>
-                        <input type="text" id="bairro" name="bairro">
-                        <label for="cidade">Cidade:</label> 
-                        <select id="cidade" style="width:20%">
-                            <option value="x"></option>
-                            <option value="ac">Rio Branco</option>
-                            <option value="al">Maceió</option>
-                            <option value="ap">Macapá</option>
-                            <option value="am">Manaus</option>
-                            <option value="ba">Salvador</option>
-                            <option value="ce">Fortaleza</option>
-                            <option value="df">Brasília</option>
-                            <option value="es">Vitória</option>
-                            <option value="go">Goiânia</option>
-                            <option value="ma">São Luís</option>
-                            <option value="mt">Cuiabá</option>
-                            <option value="ms">Campo Grande</option>
-                            <option value="mg">Belo Horizonte</option>
-                            <option value="pa">Belém</option>
-                            <option value="pb">Jõao Pessoa</option>
-                            <option value="pr">Curitiba</option>
-                            <option value="pe">Recife</option>
-                            <option value="pi">Teresina</option>
-                            <option value="rj">Rio de Janeiro</option>
-                            <option value="rn">Natal</option>
-                            <option value="rs">Porto Alegre</option>
-                            <option value="ro">Porto Velho</option>
-                            <option value="rr">Boa Vista</option>
-                            <option value="sc">florianópolis</option>
-                            <option value="sp">São Paulo</option>
-                            <option value="se">Aracaju</option>
-                            <option value="to">Palmas</option>
-                        </select>
-
-                              <hr>     
-
-                           <label for="uf">UF:</label>
-                           <input type="text" id="uf" list="cidades" name="cidades" >
-                        <datalist id="cidades">
-                            <option value=""></option>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantis</option> 
-                        </datalist>
+                    <li><h2>DADOS CADASTRAIS</h2></li>
+                    <br>
+                        <table>
+                            <tr>
+                                <td colspan="3">
+                                    <label>Nome da Entidade:</label><br>
+                                    <input type="text"> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <label>CNPJ:</label>
+                                    <input type="text" placeholder="XX. XXX. XXX/0001-XX"> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><label>Finalidade Institucional (área(s) de atuação) :</label><br>
+                                    <input type="text"></td> 
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <label>Data de Constituição:</label>
+                                    <select id="constituicao"> 
+                                        <option>Dia</option>
+                                        <option>01</option>
+                                        <option>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                    </select>
+                                    <select id="constituicao">
+                                        <option>Mês</option>
+                                        <option>Janeiro</option>
+                                        <option>Fevereiro</option>
+                                        <option>Março</option>
+                                        <option>Abril</option>
+                                        <option>Maio</option>
+                                        <option>Junho</option>
+                                        <option>Julho</option>
+                                        <option>Agosto</option>
+                                        <option>Setembro</option>
+                                        <option>Outubro</option>
+                                        <option>Novembro</option>
+                                        <option>Dezembro</option>
+                                    </select>
+                                    <select id="constituicao">
+                                        <option>Ano</option>
+                                        <option>2022</option>
+                                        <option>2021</option>
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>2016</option>
+                                        <option>2015</option>
+                                        <option>2014</option>
+                                        <option>2013</option>
+                                        <option>2012</option>
+                                        <option>2011</option>
+                                        <option>2010</option>
+                                        <option>2009</option>
+                                        <option>2008</option>
+                                        <option>2007</option>
+                                        <option>2006</option>
+                                        <option>2005</option>
+                                        <option>2004</option>
+                                        <option>2003</option>
+                                        <option>2002</option>                              
+                                        <option>2001</option>
+                                        <option>2000</option>
+                                        <option>1999</option>
+                                        <option>1998</option>
+                                        <option>1997</option>
+                                        <option>1996</option>
+                                        <option>1995</option>
+                                        <option>1994</option>
+                                        <option>1993</option>
+                                        <option>1992</option>
+                                        <option>1991</option>
+                                        <option>1990</option>
+                                        <option>1989</option>
+                                        <option>1988</option>
+                                        <option>1987</option>
+                                        <option>1986</option>
+                                        <option>1985</option>
+                                        <option>1984</option>
+                                        <option>1983</option>
+                                        <option>1982</option>
+                                        <option>1981</option>
+                                        <option>1980</option>
+                                        <option>1979</option>
+                                        <option>1978</option>
+                                        <option>1977</option>
+                                        <option>1976</option>
+                                        <option>1975</option>
+                                        <option>1974</option>
+                                        <option>1973</option>
+                                        <option>1972</option>
+                                        <option>1971</option>
+                                        <option>1970</option>
+                                        <option>1969</option>
+                                        <option>1968</option>
+                                        <option>1967</option>
+                                        <option>1966</option>
+                                        <option>1965</option>
+                                        <option>1964</option>
+                                        <option>1963</option>
+                                        <option>1962</option>
+                                        <option>1961</option>
+                                        <option>1960</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <label>Endereço:</label>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label>Nº:</label>
+                                    <input type="text" pattern="[a-zA-Z0-9]">
+                                </td>
+                                <td>
+                                    <label>Complemento:</label> 
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label>Bairro:</label> 
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    <label for="cidade">Cidade:</label> 
+                                    <select id="cidade">
+                                        <option></option>
+                                        <option>Rio Branco</option>
+                                        <option>Maceió</option>
+                                        <option>Macapá</option>
+                                        <option>Manaus</option>
+                                        <option>Salvador</option>
+                                        <option>Fortaleza</option>
+                                        <option>Brasília</option>
+                                        <option>Vitória</option>
+                                        <option>Goiânia</option>
+                                        <option>São Luís</option>
+                                        <option>Cuiabá</option>
+                                        <option>Campo Grande</option>
+                                        <option>Belo Horizonte</option>
+                                        <option>Belém</option>
+                                        <option>Jõao Pessoa</option>
+                                        <option>Curitiba</option>
+                                        <option>Recife</option>
+                                        <option>Teresina</option>
+                                        <option>Rio de Janeiro</option>
+                                        <option>Natal</option>
+                                        <option>Porto Alegre</option>
+                                        <option>Porto Velho</option>
+                                        <option>Boa Vista</option>
+                                        <option>florianópolis</option>
+                                        <option>São Paulo</option>
+                                        <option>Aracaju</option>
+                                        <option>Palmas</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>UF:</label>
+                                    <select id="cidades">
+                                        <option></option>
+                                        <option>Acre</option>
+                                        <option>Alagoas</option>
+                                        <option>Amapá</option>
+                                        <option>Amazonas</option>
+                                        <option>Bahia</option>
+                                        <option>Ceará</option>
+                                        <option>Distrito Federal</option>
+                                        <option>Espírito Santo</option>
+                                        <option>Goiás</option>
+                                        <option>Maranhão</option>
+                                        <option>Mato Grosso</option>
+                                        <option>Mato Grosso do Sul</option>
+                                        <option>Minas Gerais</option>
+                                        <option>Pará</option>
+                                        <option>Paraíba</option>
+                                        <option>Paraná</option>
+                                        <option>Pernambuco</option>
+                                        <option>Piauí</option>
+                                        <option>Rio de Janeiro</option>
+                                        <option>Rio grande do Norte</option>
+                                        <option>Rio Grande do Sul</option>
+                                        <option>Rondônia</option>
+                                        <option>Roraima</option>
+                                        <option>Santa Catarina</option>
+                                        <option>São Paulo</option>
+                                        <option>Sergipe</option>
+                                        <option>Tocantis</option> 
+                                    </select>
+                                </td>
+                                <td>
+                                        <label>CEP:</label>
+                                        <input type="text" placeholder="00.000-000">
+                                </td>
+                                <td>
+                                    <label>DDD/Telefone:</label>
+                                    <input type="text" placeholder="(00)90000-0000">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <label>Email:</label>
+                                    <input type="email"> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <label>Nome do Responsável:</label>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label>CPF:</label> 
+                                    <input type="text" placeholder="000.000.000-00">
+                                </td>
+                                <td>
+                                    <label>Órgão Expedidor:</label>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label>Estado civil:</label>
+                                    <select id="civil">
+                                        <option></option>
+                                        <option>Solteiro</option>
+                                        <option>Casado</option>
+                                        <option>Separado</option>
+                                        <option>Divorciado</option>
+                                        <option>Viúvo</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label>Email:</label>
+                                    <input type="email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label>Cargo:</label>
+                                    <select id="cargo">
+                                        <option></option>
+                                        <option>Vendedor Interno</option>
+                                        <option>Operador de Caixa</option>
+                                        <option>mecânico de Manutenção</option>
+                                        <option>Operador de Telemarketing</option>
+                                        <option>Promotor de Vendas</option>
+                                        <option>Recepcionista</option>
+                                        <option>Motorista de App</option>
+                                        <option>Pedreiro</option>
+                                        <option>Auxiliar de Serviços Gerais</option>
+                                        <option>outros</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label>Profissões:</label>
+                                    <select id="profissoes">
+                                        <option></option>
+                                        <option>Engenheiro</option>
+                                        <option>Médico</option>
+                                        <option>Tecnologia da Informação</option>
+                                        <option>Atleta</option>
+                                        <option>Professor de Escola</option>
+                                        <option>Mecânico de Veículos</option>
+                                        <option>Advogado</option>
+                                        <option>Administrador de Empresas</option>
+                                        <option>Arquiteto</option>
+                                        <option>Outros</option>
+                                    </select> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <label>Matrícula:</label>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <label>Endereço:</label>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <label>Bairro:</label>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    <label>Cidade:</label> 
+                                    <select id="cidade2">
+                                        <option></option>
+                                        <option>Rio Branco</option>
+                                        <option>Maceió</option>
+                                        <option>Macapá</option>
+                                        <option>Manaus</option>
+                                        <option>Salvador</option>
+                                        <option>Fortaleza</option>
+                                        <option>Brasília</option>
+                                        <option>Vitória</option>
+                                        <option>Goiânia</option>
+                                        <option>São Luís</option>
+                                        <option>Cuiabá</option>
+                                        <option>Campo Grande</option>
+                                        <option>Belo Horizonte</option>
+                                        <option>Belém</option>
+                                        <option>Jõao Pessoa</option>
+                                        <option>Curitiba</option>
+                                        <option>Recife</option>
+                                        <option>Teresina</option>
+                                        <option>Rio de Janeiro</option>
+                                        <option>Natal</option>
+                                        <option>Porto Alegre</option>
+                                        <option>Porto Velho</option>
+                                        <option>Boa Vista</option>
+                                        <option>florianópolis</option>
+                                        <option>São Paulo</option>
+                                        <option>Aracaju</option>
+                                        <option>Palmas</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>UF:</label>
+                                    <select id="cidades">
+                                        <option></option>
+                                        <option>Acre</option>
+                                        <option>Alagoas</option>
+                                        <option>Amapá</option>
+                                        <option>Amazonas</option>
+                                        <option>Bahia</option>
+                                        <option>Ceará</option>
+                                        <option>Distrito Federal</option>
+                                        <option>Espírito Santo</option>
+                                        <option>Goiás</option>
+                                        <option>Maranhão</option>
+                                        <option>Mato Grosso</option>
+                                        <option>Mato Grosso do Sul</option>
+                                        <option>Minas Gerais</option>
+                                        <option>Pará</option>
+                                        <option>Paraíba</option>
+                                        <option>Paraná</option>
+                                        <option>Pernambuco</option>
+                                        <option>Piauí</option>
+                                        <option>Rio de Janeiro</option>
+                                        <option>Rio grande do Norte</option>
+                                        <option>Rio Grande do Sul</option>
+                                        <option>Rondônia</option>
+                                        <option>Roraima</option>
+                                        <option>Santa Catarina</option>
+                                        <option>São Paulo</option>
+                                        <option>Sergipe</option>
+                                        <option>Tocantis</option> 
+                                    </select>
+                                </td>
+                                <td>
+                                    <label>CEP:</label>
+                                    <input type="text" placeholder="00.000-000">
+                                </td>
+                                <td>
+                                    <label>DDD/Telefone:</label>
+                                    <input type="tel" placeholder="(00)90000-0000">
+                                </td>
+                            </tr>
+                        </table> <br>
                         
-                        <label for="cep">CEP:</label>
-                        <input type="text" id="cep" name="cep" >
-                        <label for="ddd">DDD/Telefone:</label>
-                        <input type="text" id="ddd" name="ddd">
-                        <hr>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">    
-                        <hr>
-
-                <label for="titular">Nome do Responsável:</label>
-                <input type="text" id="titular" name="titular">
-                <hr>
-                <label for="cpf">CPF:</label>
-                <input type="text" name="cpf" id="cpf">
-                <label for="expedidor">Órgão Expedidor:</label>
-                <input type="text" id="expedidor" name="expedidor">
-                <hr>
-                <label for="civil">Estado civil:</label>
-                <select id="civil" style="width:20%">
-                    <option value="n"></option>
-                    <option value="">Solteiro</option>
-                    <option value="">Casado</option>
-                    <option value="">Separado</option>
-                    <option value="">Divorciado</option>
-                    <option value="">Viúvo</option>
-                </select>
-                <label for="email2">Email:</label>
-                <input type="email" id="email2" name="email2">
-                <hr>
-                <label for="cargo">Cargo:</label>
-                <input type="text" id="trampo" name="trampo" list="cargo">
-                 <datalist id="cargo">
-                    <option value="est1">Vendedor Interno</option>
-                    <option value="est2">Operador de Caixa</option>
-                    <option value="est3">mecânico de Manutenção</option>
-                    <option value="est4">Operador de Telemarketing</option>
-                    <option value="est5">Promotor de Vendas</option>
-                    <option value="est6">Recepcionista</option>
-                    <option value="est7">Motorista de App</option>
-                    <option value="est8">Pedreiro</option>
-                    <option value="est9">Auxiliar de Serviços Gerais</option>
-                    <option value="est10">outros</option>
-                 </datalist>
-
-                <label for="profissoes">Profissões:</label>
-                <input type="text" id="trabalho" name="trabalho" list="profissoes">
-                <datalist id="profissoes">
-                    <option value="eng">Engenheiro</option>
-                    <option value="med">Médico</option>
-                    <option value="ti">Tecnologia da Informação</option>
-                    <option value="atl">Atleta</option>
-                    <option value="prof">Professor de Escola</option>
-                    <option value="mec">Mecânico de Veículos</option>
-                    <option value="adv">Advogado</option>
-                    <option value="adm">Administrador de Empresas</option>
-                    <option value="arq">Arquiteto</option>
-                    <option value="out">Outros</option>
-                </datalist> 
-                <hr>
-
-                <label for="matricula">Matrícula:</label>
-                <input type="text" id="matricula" name="matricula">
-                <hr>
-                <label for="local">Endereço:</label>
-                <input type="text" id="local" name="local">
-                <hr>
-                <label for="bairro2">Bairro:</label>
-                <input type="text" id="bairro1" name="bairro2">
-                <label for="cidade2">Cidade:</label> 
-                <select id="cidade2" style="width:20%">
-                    <option value="x"></option>
-                            <option value="ac">Rio Branco</option>
-                            <option value="al">Maceió</option>
-                            <option value="ap">Macapá</option>
-                            <option value="am">Manaus</option>
-                            <option value="ba">Salvador</option>
-                            <option value="ce">Fortaleza</option>
-                            <option value="df">Brasília</option>
-                            <option value="es">Vitória</option>
-                            <option value="go">Goiânia</option>
-                            <option value="ma">São Luís</option>
-                            <option value="mt">Cuiabá</option>
-                            <option value="ms">Campo Grande</option>
-                            <option value="mg">Belo Horizonte</option>
-                            <option value="pa">Belém</option>
-                            <option value="pb">Jõao Pessoa</option>
-                            <option value="pr">Curitiba</option>
-                            <option value="pe">Recife</option>
-                            <option value="pi">Teresina</option>
-                            <option value="rj">Rio de Janeiro</option>
-                            <option value="rn">Natal</option>
-                            <option value="rs">Porto Alegre</option>
-                            <option value="ro">Porto Velho</option>
-                            <option value="rr">Boa Vista</option>
-                            <option value="sc">florianópolis</option>
-                            <option value="sp">São Paulo</option>
-                            <option value="se">Aracaju</option>
-                            <option value="to">Palmas</option>
-                </select>
-                <hr>
-
-                <label for="uf1">UF:</label>
-                <input type="text" id="uf1" list="cidades1" name="cidades1" >
-             <datalist id="cidades1">
-                <option value=""></option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantis</option> 
-             </datalist>
-             <label for="cep1">CEP:</label>
-             <input type="text" id="cep1" name="cep1" >
-             <label for="ddd1">DDD/Telefone:</label>
-             <input type="text" id="ddd1" name="ddd1">
-            </section>
-        </main>
-        <br>
-        <footer>
-            <h5 style="text-align: left">
-                <ol start="2">
-                    <li>INFORMAÇÕES ADICIONAIS</li>
+                    <li><h2>INFORMAÇÕES ADICIONAIS</h2></li>
+                        <textarea id="Formulario" cols="97" rows="5"></textarea>
+                        <br>
+                        <input type="text"> <br>
+                        <label>local e Data</label>
+                        <br>
+                        <input type="text"> <br>
+                        <label>Nome e Assinatura do Responsável pela Entidade</label>
                 </ol>
-            </h5>
-            <textarea name="infadicionais" id="inf"  rows="5" cols="100"></textarea>
-            <br>
-    
-            <p style="text-align: center">________________________________________________________</p>
-            <p style="text-align:center" >local e Data</p>
-            <br>
-            <p>___________________________________________________________</p>
-            <p>Nome e Assinatura do Responsável pela Entidade</p>
-        </footer>
-      
-      </form>
-    </div> 
+        </form>
+    </main>
 </body>
 </html>
